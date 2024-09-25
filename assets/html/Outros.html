@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"
+    xmlns:og="http://opengraphprotocol.org/schema/" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM Informática | Outros </title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Icon Arrow Example</title>
+    <!-- Adiciona o link do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <p>
+                Tudo o que você precisa, em um só lugar.
+                Os melhores produtos do AliExpress, Shopee e
+                Mercado Livre te esperando.
+            </p>
+        </div>
+    </header>
+
+    <section>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 50px;">
+            <!-- Logo -->
+            <img src="../img/logo-gm.jpg" alt="logo-gm" class="logo-img" style="height: 100px; width: 100px;" />
+            <!-- Barra de Pesquisa -->
+            <div
+                style="display: flex; justify-content: center; align-items: center; flex-grow: 1; padding: 0 20px; position: relative;">
+                <input placeholder="O que você está buscando?"
+                    style="border-radius: 10px; width: 100%; max-width: 50rem; height: 40px; padding: 5px; padding-left: 30px;" />
+                <i class="fas fa-search" style="padding: 10px; color: #000000;"></i>
+            </div>
+
+            <!-- Meu Carrinho -->
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="carrinho"
+                    style="height: 40px; margin-bottom: 8px;" />
+                <p style="margin: 0; text-align: center;">Meu Carrinho</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="justify-content: center; align-items: center; text-align: center; width: 100vw;">
+        <div class="dropdown"
+            style="border-color: gray; border-width: 1px; border-style: solid; width: 100vw; padding: 8px;">
+            <a href="/index.html" style="text-decoration: none;">
+                <button style="color: black;"> Início </button>
+            </a>
+
+            <a href="Gabinete.html" style="text-decoration: none;">
+                <button style="color: black;">Gabinete </button>
+            </a>
+
+            <a href="Hardware.html" style="text-decoration: none;">
+                <button style="color: black;"> Hardware</button>
+            </a>
+
+            <a href="perifericos.html" style="text-decoration: none;">
+                <button style="color: black;">Periféricos</button>
+            </a>
+
+            <a href="Refrigeração.html" style="text-decoration: none;">
+                <button style="color: black;"> Refrigeração</button>
+            </a>
+
+            <a href="SmartWatch.html" style="text-decoration: none;">
+                <button style="color: black;"> Relógio / SmartWatch </button>
+            </a>
+            <button onclick="toggleDropdown()" style="color: black;"> Outros <i class="fas fa-chevron-down"></i> </button>
+            <div class="dropdown-content">
+                <a href="#">Acessorios</a>
+                <a href="#">Carregadores</a>
+                <a href="#">Fones de ouvidos</a>
+            </div>
+        </div>
+    </section>
+
+    <section style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+
+        <div class="produtos">
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-column">
+                <h2 style="text-align: left;">
+                    Sobre Nós
+                </h2>
+                <p style="text-align: left; margin-top: 20px;">
+                    "Bem-vindo à nossa loja online de tecnologia, onde você encontra uma vasta seleção de peças de
+                    hardware,
+                    acessórios e PCs para todas as suas necessidades. Especializamo-nos em produtos novos e openbox,
+                    garantindo qualidade e preços acessíveis para entusiastas da tecnologia e gamers. Nossa missão é
+                    oferecer a você os melhores produtos para aprimorar seu setup, seja para jogos, trabalho ou
+                    construção
+                    do PC dos seus sonhos. Com uma equipe de especialistas pronta para ajudar, explore nosso catálogo e
+                    descubra
+                    as melhores opções em tecnologia para levar sua experiência ao próximo nível!"
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h2>Contato</h2>
+                <p style="margin-top: 20px;">Fortaleza - Ce</p>
+                <p style="margin-top: 20px;">Email: gminformatica21@gmail.com</p>
+            </div>
+
+            <div class="footer-column">
+                <h2>Siga-nos</h2>
+                <div class="social-icons" style="margin-top: 20px;">
+                    <a href="#"><img src="../img/logo-insta.png" alt="Instagram"></a>
+                    <p>GMInformática</p>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: black; display: flex; padding: 10px;">
+            <a style="color: white;"> Copyright GM Informática - 2024. Afiliados</a>
+        </div>
+    </footer>

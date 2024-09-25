@@ -1,0 +1,310 @@
+:root {
+    background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo-h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+
+.top {
+    background-color: black;
+    width: 100vw;
+    height: 2rem;
+}
+
+.top p {
+    text-align: center;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+}
+
+.logo-img {
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 130px;
+    height: 130px;
+}
+
+.slider {
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    /* O valor depende da quantidade de imagens */
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100vw;
+    height: 85vh;
+    object-fit: cover;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(77, 77, 77, 0.075);
+    color: white;
+    border-radius: 100px;
+    border-color: rgb(0, 0, 0);
+    font-size: 2rem;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+    z-index: 1;
+    margin: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: rgba(163, 13, 13, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: rgb(0, 0, 0);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: #cccccc00;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+
+}
+
+/* Estilo para a lista */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    justify-items: center;
+    align-items: center;
+    padding-top: 25px;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    justify-items: center;
+    align-items: center;
+
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Exibe a lista quando o botão é clicado */
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+.bannerafiliados {
+    margin-top: 40px;
+    width: 100vw;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerafiliados img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Categorias {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 150px;
+}
+
+.categoria-item {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoria-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.categoria-item:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do item */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+}
+
+/* Para a animação funcionar no texto também */
+.categoria-item:hover h1,
+.categoria-item:hover a {
+    transform: translateY(-5px); /* Levanta o texto um pouco */
+}
+
+.produtos {
+    display: flex; /* Usa flexbox para alinhar os produtos em linha */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço suficiente */
+    justify-content: center; /* Centraliza os produtos horizontalmente */
+    gap: 20px; /* Espaçamento entre os produtos */
+    padding: 20px; /* Espaçamento interno da seção */
+}
+
+.produto {
+    border: 1px solid #ddd; /* Borda ao redor do produto */
+    border-radius: 5px; /* Arredonda as bordas */
+    padding: 10px; /* Espaçamento interno do produto */
+    text-align: center; /* Centraliza o texto dentro do produto */
+    transition: box-shadow 0.3s; /* Efeito suave ao passar o mouse */
+    width: 300px; /* Largura fixa para cada produto */
+}
+
+.produto h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.produto p {
+    margin-bottom: 15px;
+}
+
+.produto:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.preco {
+    font-weight: bold;
+    color: #4CAF50; /* Cor verde */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do preço */
+}
+
+.comprar {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove a linha sublinhada */
+    transition: background-color 0.3s;
+    margin-top: 5px; /* Adiciona espaço acima do botão */
+}
+
+.comprar:hover {
+    background-color: #337736; /* Tom mais escuro ao passar o mouse */
+}
+
+
+.produto2 {
+    text-align: center; /* Centraliza o texto dentro do produto */
+    transition: box-shadow 0.3s; /* Efeito suave ao passar o mouse */
+    width: 300px; /* Largura fixa para cada produto */
+}
+
+.produto2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    display: flex;
+    background-color: #a8a8a8; 
+    color: #030303; 
+    padding: 40px; 
+    text-align: center;
+    margin-top: 300px;
+}
+
+.footer h1{
+    color: rgb(0, 0, 0);
+}
+
+.footer p{
+    color: rgb(0, 0, 0);
+}
+
+.footer-column {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    flex-direction: column;
+}
+
+.social-icons img {
+    width: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"
+    xmlns:og="http://opengraphprotocol.org/schema/" lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM Informática</title>
+    <link rel="stylesheet" href="./assets/html/Gabinete.html">
+    <link rel="stylesheet" href="./assets/styles/global.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Icon Arrow Example</title>
+    <!-- Adiciona o link do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="top" id="Inicio">
+            <p>
+                Tudo o que você precisa, em um só lugar.
+                Os melhores produtos do AliExpress, Shopee e
+                Mercado Livre te esperando.
+            </p>
+        </div>
+    </header>
+
+    <section>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 50px;">
+            <!-- Logo -->
+            <img src="assets/img/logo-gm.jpg" alt="logo-gm" class="logo-img" style="height: 100px; width: 100px;" />
+            <!-- Barra de Pesquisa -->
+            <div style="display: flex; justify-content: center; align-items: center; flex-grow: 1; padding: 0 20px; position: relative;">
+                <input placeholder="O que você está buscando?"
+                    style="border-radius: 10px; width: 100%; max-width: 50rem; height: 40px; padding: 5px; padding-left: 30px;"
+                     />
+                <i class="fas fa-search" style="padding: 10px; color: #000000;"></i>
+            </div>
+            
+            <!-- Meu Carrinho -->
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="carrinho"
+                    style="height: 40px; margin-bottom: 8px;" />
+                <p style="margin: 0; text-align: center;">Meu Carrinho</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="justify-content: center; align-items: center; text-align: center; width: 100vw;">
+        <div class="dropdown"
+            style="border-color: gray; border-width: 1px; border-style: solid; width: 100vw; padding: 8px;">
+            <a href="#Inicio" style="text-decoration: none;">
+                <button style="color: black;"> Início </button>
+            </a>
+            <a href="./assets/html/Gabinete.html">
+            <button style="color: black;">Gabinete </button></a>
+            <button style="color: black;"> Hardware</button>
+            <a href="./assets/html/perifericos.html">
+                <button style="color: black;">Periféricos</button></a>
+            <button style="color: black;"> Refrigeração</button>
+            <button style="color: black;"> Relógio / SmartWatch </button>
+            <button onclick="toggleDropdown()" style="color: black;"> Outros <i class="fas fa-chevron-down"></i> </button>
+            <div class="dropdown-content">
+                <a href="#">Acessorios</a>
+                <a href="#">Carregadores</a>
+                <a href="#">Fones de ouvidos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="slides">
+            <img src="assets/img/banner-Gabintes.png" alt="banner-Gabintes" />
+            <img src="assets/img/banner-perifericos.png" alt="banner-perifericos" />
+            <img src="assets/img/banner-Hardware.png" alt="banner-Gabintes" />
+        </div>
+
+        <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <section class="bannerafiliados">
+        <div>
+            <img src="assets/img/banner-alifiados.png" alt="banner-alifiados" />
+        </div>
+    </section>
+
+    <section class="Categorias">
+        <div class="categoria-item">
+            <img src="assets/img/Gabinetes001.png" alt="Gabinete de PC" />
+            <h1 style="margin-top: 5px;">Gabinete</h1>
+            <a>Office e Pc Gamer</a>
+        </div>
+        <div class="categoria-item">
+            <img src="assets/img/hardware001.png" alt="Hardware de PC" />
+            <h1 style="margin-top: 5px;">Hardware</h1>
+            <a>Tudo para seu Pc</a>
+        </div>
+        <div class="categoria-item">
+            <img src="assets/img/perifericos001.png" alt="Periféricos de PC" />
+            <h1 style="margin-top: 5px;">Periféricos</h1>
+            <a>Todos os acessórios</a>
+        </div>
+    </section>
+
+    <section>
+        <header class="titulo-h1">
+            <h1>Promoções</h1>
+        </header>
+    </section>
+
+    <section style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+        <div class="produtos">
+            <div class="produto">
+                <img src="assets/img/img01.png" alt="Produto 01" />
+                <h2>Mouse Attack shark x6 paw3395</h2>
+                <p> Modelo: X6, O modelo de Sensor de Pixart 3395 (26000 DPI | 650 IPS | 50G) Bluetooth sem fio</p>
+                <p class="preco">R$ 179,87</p>
+                <a class="comprar" href="https://s.click.aliexpress.com/e/_DEB9HwD">Comprar</a>
+            </div>
+
+            <div class="produto">
+                <img src="assets/img/img02.png" alt="Produto 02" />
+                <h2>Teclado Mecânico AK820 Pro </h2>
+                <p>Teclado mecânico com tela TFT, botão multifuncional, com fio, 2.4GHz, BT Connect.</p>
+                <p class="preco">R$ 204,88</p>
+                <a class="comprar" href="https://s.click.aliexpress.com/e/_DCMZwcv">Comprar</a>
+            </div>
+
+            <div class="produto">
+                <img src="assets/img/img03.png" alt="Produto 03" />
+                <h2>T2 fone de ouvido Bluetooth</h2>
+                <p>Fone de ouvido Bluetooth auscultadores HIFI transparentes, LED Power Digital Display. T2</p>
+                <p class="preco">R$ 18,44</p>
+                <a class="comprar" href="https://s.click.aliexpress.com/e/_Dndwtrx">Comprar</a>
+            </div>
+
+            <div class="produto">
+                <img src="assets/img/img04.png" alt="Produto 04" />
+                <h2>Mouse pad 500 x 1000 x 3mm</h2>
+                <p>Dragão japonês grande mousepad para jogos xxl teclado gamer mouse pad na mesa velocidade</p>
+                <p class="preco">R$ 92,64</p>
+                <a class="comprar" href="https://s.click.aliexpress.com/e/_DDJ4ywd">Comprar</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+        <header class="titulo-h1">
+            <h1>Destaques</h1>
+        </header>
+    </section>
+
+    <section style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+        <div class="produtos">
+            <div class="produto">
+                <img src="assets/img/img01.png" alt="Produto 01" />
+                <h2>Mouse Attack shark x6 paw3395</h2>
+                <p> Modelo: X6, O modelo de Sensor de Pixart 3395 (26000 DPI | 650 IPS | 50G) Bluetooth sem fio</p>
+                <p class="preco">R$ 179,87</p>
+                <a class="comprar" href="https://s.click.aliexpress.com/e/_DEB9HwD">Comprar</a>
+            </div>
+
+            <div class="produto">
+                <img src="assets/img/img05.png" alt="Produto 05" />
+                <h2>Mouse REDRAGON COBRA M711 RGB</h2>
+                <p> USB Wired Gaming Mouse 12400 DPI 9 Botões Ratos Programável Ergonômico para Computador PC Portátil
+                    Gamer </p>
+                <p class="preco">R$ 119,33</p>
+                <a class="comprar" href="https://s.click.aliexpress.com/e/_Dczj5sd">Comprar</a>
+            </div>
+
+            <div class="produto">
+                <img src="assets/img/img02.png" alt="Produto 02" />
+                <h2>Teclado Mecânico AK820 Pro </h2>
+                <p>Teclado mecânico com tela TFT, botão multifuncional, com fio, 2.4GHz, BT Connect.</p>
+                <p class="preco">R$ 204,88</p>
+                <a class="comprar" href="https://s.click.aliexpress.com/e/_DCMZwcv">Comprar</a>
+            </div>
+
+            <div class="produto">
+                <img src="assets/img/img03.png" alt="Produto 03" />
+                <h2>T2 fone de ouvido Bluetooth</h2>
+                <p>Fone de ouvido Bluetooth auscultadores HIFI transparentes, LED Power Digital Display. T2</p>
+                <p class="preco">R$ 18,44</p>
+                <a class="comprar" href="https://s.click.aliexpress.com/e/_Dndwtrx">Comprar</a>
+            </div>
+
+            <div class="produto">
+                <img src="assets/img/img04.png" alt="Produto 04" />
+                <h2>Mouse pad 500 x 1000 x 3mm</h2>
+                <p>Dragão japonês grande mousepad para jogos xxl teclado gamer mouse pad na mesa velocidade</p>
+                <p class="preco">R$ 92,64</p>
+                <a class="comprar" href="https://s.click.aliexpress.com/e/_DDJ4ywd">Comprar</a>
+            </div>
+
+            <div class="produto">
+                <img src="assets/img/img06.png" alt="Produto 06" />
+                <h2> Headset Gamer HAVIT H2002d </h2>
+                <p>Fone de ouvido Headset Gamer HAVIT H2002d P3 PS3/PS4/XBOX/PC Preto</p>
+                <p class="preco">R$ 180,00</p>
+                <a class="comprar" href="https://mercadolivre.com/sec/2HbCvSr">Comprar</a>
+            </div>
+
+            <div class="produto">
+                <img src="assets/img/img07.png" alt="Produto 07" />
+                <h2> Xeon-E5 2650 Processador </h2>
+                <p> Xeon-E5 2650 Processador V3, SR1YA, 2.3Ghz, 10 Core, Soquete 105W, CPU LGA 2011-3 </p>
+                <p class="preco">R$ 20,00</p>
+                <a class="comprar" href="https://s.click.aliexpress.com/e/_DdRd3G5">Comprar</a>
+            </div>
+
+            <div class="produto">
+                <img src="assets/img/img09.png" alt="Produto 09" />
+                <h2>ALSEYE H120D CPU Refrigerador de Ventoinha</h2>
+                <p>Ventoinha PWM 120 milímetros RGB 4 Pinos 6 Tubos de Calor Cooler para LGA 775 115x1366 2011 AM2 + AM3
+                    + AM4white,A-RGB</p>
+                <p class="preco">R$ 222,69</p>
+                <a class="comprar" href="https://s.click.aliexpress.com/e/_DnOpdO1">Comprar</a>
+            </div>
+
+            <div class="produto">
+                <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0a776604a6694b988dc76faa63fff200M/Ventilador-Aigo-CPU-Refrigerador-do-radiador-do-PC-Tubula-es-de-calor-2-4-RGB-silencioso.jpg_.webp"
+                    alt="Produto 10" />
+                <h2>ICE200PRO CPU Refrigerador de Ventoinha</h2>
+                <p>Ventilador Aigo-CPU, Refrigerador do radiador do PC, Tubulações de calor 2 4, RGB silencioso, Intel
+                    1700, 1150, 1155, 1156, 1366, AM2, AM3, AM4, AMD</p>
+                <p class="preco">R$ 49,22</p>
+                <a class="comprar" href="https://s.click.aliexpress.com/e/_DBvJT3T">Comprar</a>
+            </div>
+
+            <div class="produto">
+                <img src="assets/img/gabinete-02.png" alt="Gabinete-01" />
+                <h2>Gabinete Gamer Com 3 Fans</h2>
+                <p>Gabinete Gamer Mid Tower com vidro temperado, inclui 3 fans RGB para uma experiência de jogo
+                    imersiva.</p>
+                <p class="preco">R$ 295,00</p>
+                <a class="comprar" href="https://mercadolivre.com/sec/2occH2U">Comprar</a>
+            </div>
+
+            <div class="produto">
+                <img src="assets/img/gabinete-01.png" alt="Gabinete-02" />
+                <h2>Gabinete Gamer Hayom Gb1713</h2>
+                <p>Gabinete Gamer Profissional Hayom Gb1713, preto, com 4 fans RGB para um desempenho de refrigeração
+                    superior.</p>
+                <p class="preco">R$ 272,00</p>
+                <a class="comprar" href="https://mercadolivre.com/sec/2occH2U">Comprar</a>
+            </div>
+
+            <div class="produto">
+                <img src="assets/img/img08.png" alt="Gabinete-03" />
+                <h2>Gabinete Gamer </h2>
+                <p>Gabinete Gamer | Rise Mode | Glass 06 Black | S/fan Cor Preto</p>
+                <p class="preco">R$ 251,99</p>
+                <a class="comprar" href="https://mercadolivre.com/sec/2QHmHdt">Comprar</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section style="display: flex; justify-content: center; align-items: center;">
+        <header class="titulo-h1" style="display: flex; align-items: center;">
+            <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="logo instagram"
+                style="width: 30px; height: 30px; margin-right: 10px;">
+            <h1>GMInformática</h1>
+        </header>
+    </section>
+    <section style="margin-top: 30px;">
+        <div style="display: flex;">
+            <div class="produto2">
+                <img src="assets/img/img01.png" alt="Produto 01" />
+            </div>
+
+            <div class="produto2">
+                <img src="assets/img/img05.png" alt="Produto 05" />
+            </div>
+
+            <div class="produto2">
+                <img src="assets/img/img02.png" alt="Produto 02" />
+            </div>
+
+            <div class="produto2">
+                <img src="assets/img/img03.png" alt="Produto 03" />
+            </div>
+
+            <div class="produto2">
+                <img src="assets/img/img04.png" alt="Produto 04" />
+            </div>
+
+            <div class="produto2">
+                <img src="assets/img/img06.png" alt="Produto 06" />
+            </div>
+
+            <div class="produto2">
+                <img src="assets/img/gabinete-01.png" alt="Produto 06" />
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
+    <footer>
+        <div class="footer">
+            <div class="footer-column">
+                <h2 style="text-align: left;">
+                    Sobre Nós
+                </h2>
+                <p style="text-align: left; margin-top: 20px;">
+                    "Bem-vindo à nossa loja online de tecnologia, onde você encontra uma vasta seleção de peças de
+                    hardware,
+                    acessórios e PCs para todas as suas necessidades. Especializamo-nos em produtos novos e openbox,
+                    garantindo qualidade e preços acessíveis para entusiastas da tecnologia e gamers. Nossa missão é
+                    oferecer a você os melhores produtos para aprimorar seu setup, seja para jogos, trabalho ou
+                    construção
+                    do PC dos seus sonhos. Com uma equipe de especialistas pronta para ajudar, explore nosso catálogo e
+                    descubra
+                    as melhores opções em tecnologia para levar sua experiência ao próximo nível!"
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h2>Contato</h2>
+                <p style="margin-top: 20px;">Fortaleza - Ce</p>
+                <p style="margin-top: 20px;">Email: gminformatica21@gmail.com</p>
+            </div>
+
+            <div class="footer-column">
+                <h2>Siga-nos</h2>
+                <div class="social-icons" style="margin-top: 20px;">
+                    <a href="#"><img src="assets/img/logo-insta.png" alt="Instagram"></a>
+                    <p>GMInformática</p>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: black; display: flex; padding: 10px;">
+            <a style="color: white;"> Copyright GM Informática - 2024. Afiliados</a>
+        </div>
+    </footer>
+</body>
+
+</html>
