@@ -8,13 +8,19 @@
     box-sizing: border-box;
 }
 
-.titulo-h1{
+.titulo-h1 {
     display: flex;
     justify-content: center;
     margin-top: 100px;
     font-size: 20px;
 }
 
+/* Título responsivo */
+@media (max-width: 768px) {
+    .titulo-h1 {
+        font-size: 16px;
+    }
+}
 
 .top {
     background-color: black;
@@ -37,6 +43,7 @@
     height: 130px;
 }
 
+/* Slider Responsivo */
 .slider {
     position: relative;
     width: 100vw;
@@ -47,7 +54,6 @@
 .slides {
     display: flex;
     width: 300%;
-    /* O valor depende da quantidade de imagens */
     height: 100%;
     transition: transform 0.5s ease-in-out;
 }
@@ -56,6 +62,17 @@
     width: 100vw;
     height: 85vh;
     object-fit: cover;
+}
+
+/* Para telas menores */
+@media (max-width: 768px) {
+    .slider {
+        height: 60vh;
+    }
+
+    .slides img {
+        height: 60vh;
+    }
 }
 
 .slider-btn {
@@ -104,6 +121,7 @@
     background-color: rgb(0, 0, 0);
 }
 
+/* Responsividade no Dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -116,11 +134,8 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
-    
-
 }
 
-/* Estilo para a lista */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -132,28 +147,23 @@
     justify-items: center;
     align-items: center;
     padding-top: 25px;
-
 }
 
 .dropdown-content a {
     color: black;
     padding: 10px 20px;
     text-decoration: none;
-    justify-items: center;
-    align-items: center;
-
-    
 }
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
 
-/* Exibe a lista quando o botão é clicado */
 .dropdown.show .dropdown-content {
     display: block;
 }
 
+/* Banner Afiliados Responsivo */
 .bannerafiliados {
     margin-top: 40px;
     width: 100vw;
@@ -168,17 +178,20 @@
     height: auto;
 }
 
+/* Categorias Responsivas */
 .Categorias {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 50px;
     margin-top: 150px;
+    flex-wrap: wrap;
 }
 
 .categoria-item {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px;
 }
 
 .categoria-item img {
@@ -191,30 +204,30 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
 }
 
-/* Para a animação funcionar no texto também */
 .categoria-item:hover h1,
 .categoria-item:hover a {
     transform: translateY(-5px); /* Levanta o texto um pouco */
 }
 
+/* Produtos Responsivos */
 .produtos {
-    display: flex; /* Usa flexbox para alinhar os produtos em linha */
-    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço suficiente */
-    justify-content: center; /* Centraliza os produtos horizontalmente */
-    gap: 20px; /* Espaçamento entre os produtos */
-    padding: 20px; /* Espaçamento interno da seção */
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .produto {
-    border: 1px solid #ddd; /* Borda ao redor do produto */
-    border-radius: 5px; /* Arredonda as bordas */
-    padding: 10px; /* Espaçamento interno do produto */
-    text-align: center; /* Centraliza o texto dentro do produto */
-    transition: box-shadow 0.3s; /* Efeito suave ao passar o mouse */
-    width: 300px; /* Largura fixa para cada produto */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+    width: 300px;
 }
 
-.produto h2{
+.produto h2 {
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -232,10 +245,17 @@
     height: auto;
 }
 
+/* Responsividade nos Produtos */
+@media (max-width: 768px) {
+    .produto {
+        width: 100%;
+    }
+}
+
 .preco {
     font-weight: bold;
-    color: #4CAF50; /* Cor verde */
-    margin-bottom: 10px; /* Adiciona espaço abaixo do preço */
+    color: #4CAF50;
+    margin-bottom: 10px;
 }
 
 .comprar {
@@ -245,41 +265,31 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none; /* Remove a linha sublinhada */
+    text-decoration: none;
     transition: background-color 0.3s;
-    margin-top: 5px; /* Adiciona espaço acima do botão */
+    margin-top: 5px;
 }
 
 .comprar:hover {
-    background-color: #337736; /* Tom mais escuro ao passar o mouse */
+    background-color: #337736;
 }
 
-
-.produto2 {
-    text-align: center; /* Centraliza o texto dentro do produto */
-    transition: box-shadow 0.3s; /* Efeito suave ao passar o mouse */
-    width: 300px; /* Largura fixa para cada produto */
-}
-
-.produto2 img {
-    max-width: 100%;
-    height: auto;
-}
-
+/* Footer Responsivo */
 .footer {
     display: flex;
-    background-color: #a8a8a8; 
-    color: #030303; 
-    padding: 40px; 
+    background-color: #a8a8a8;
+    color: #030303;
+    padding: 40px;
     text-align: center;
     margin-top: 300px;
+    flex-wrap: wrap;
 }
 
-.footer h1{
+.footer h1 {
     color: rgb(0, 0, 0);
 }
 
-.footer p{
+.footer p {
     color: rgb(0, 0, 0);
 }
 
@@ -307,4 +317,16 @@
 
 .social-icons img:hover {
     transform: scale(1.2);
+}
+
+/* Responsividade no Footer */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin: 10px;
+    }
 }
